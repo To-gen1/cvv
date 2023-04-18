@@ -1,0 +1,238 @@
+# {
+    margin: 0;
+    height: 0;
+    width: 0;
+}
+
+.header{
+    height: 95vh;
+    background-image:linear-gradient(hsla(111, 55%, 64%, 0.863),
+     hsla(155, 49%, 55%, 0.822)) , url(./img/togen\ lo.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+     
+    
+}
+
+.togen{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+.logo{
+    height: 65px;
+}
+
+.text-box{
+ text-transform: uppercase;
+ color: #777;
+ padding: 14px;
+ position: absolute;
+ top: 40%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ text-align: center;
+ backface-visibility: hidden;
+}
+
+
+.text1{
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    word-spacing: 15px;
+    animation: menu .2s;
+  
+    
+}
+.text2{
+    display: block;
+    font-size: 35px;
+    font-weight: 400;
+    word-spacing: 5px;
+    animation: menu-out .3s;
+
+}
+@keyframes menu{
+0%{
+    opacity: 0;
+    transform: rotate(360deg);
+}
+
+100%{
+    opacity: 1;
+    transform: rotate(-360deg);
+}
+}
+@keyframes menu-out{
+    0%{
+        opacity: 0;
+        transform: translate(10px);
+    }
+    
+    100%{
+        opacity: 2;
+        transform: translate(100px);
+    }
+    }
+.btn:link,btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 30px;
+    letter-spacing: 15px;
+    border-radius: 100px;
+    transition: all .2s;
+
+}
+.btn:hover{
+    box-shadow: 0 15px 20px rgba(0,0, 0, .5);
+
+}
+.btn:active{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    
+}
+.btn-welcome{
+    background-color: #fff;
+   color: #777;
+}
+.btn::after{
+    content: '';
+    display: inline-block;
+    border-radius: 100%;
+    z-index: -1;
+}
+.btn-welcome::after{
+    background-color: #fff;
+
+}
+.bod{
+  background-color: #ffffff;
+  padding: 11rem 0;
+  margin-top: -20vh;
+    margin-bottom: -20vh;
+}
+.bod-text{
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    background-image: linear-gradient(hsla(111, 55%, 64%, 0.863),
+    hsla(155, 49%, 55%, 0.822));
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2em;
+    transition: all .2rem;
+    
+
+}
+
+.you{
+    text-align: center;
+}
+
+.bod-text:hover{
+    transform: skewY(4deg) skewX(14deg) scale(0.9);
+    text-shadow: .5rem .3rem .6rem rgba(0,0,0,.8);
+}
+
+
+.row{
+    max-width: 150vh;
+    background-color: rgb(238, 173, 173);
+    color: #777;
+    margin: 0 auto;
+
+}
+.column{
+    
+    width: calc((100% - 30vh) / 2);
+    float: right;
+}
+
+.column:not(:last-child) {
+    margin-right: 90vh;
+}
+
+.head{
+    font-size: .95rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.head1{
+    font-size: .95rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.learn{
+    font-size: 19px;
+    color: #3a862cdc;
+    text-decoration: none;
+    border-bottom: 2px solid #3a862cdc;
+    transition: all 1.2s;
+}
+
+.learn:hover{
+    background-color: #3a862cdc;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.15);
+    transform: translateY(-2px);
+}
+.learn:active{
+    background-color: #3a862cdc;
+    box-shadow: 0 .5rem 2rem rgba(0,0,0,.15);
+    transform: translateY(0px);
+}
+
+.image-header{
+    position: relative;
+}
+
+.image{
+    width: 50%;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,.4) ;
+    border-radius: 2px;
+    position: absolute;
+    outline-offset: 2rem;
+}
+
+.image1{
+    left: 4rem;
+    top: -20rem;
+}
+.image2{
+    right: .1rem;
+    top: -15rem;
+}
+.image3{
+    left: -2rem;
+    top: -13rem;
+}.image:hover{
+    outline: 1.5rem solid hsla(111, 55%, 64%, 0.863);
+    transform: scale(1.05) translateY(-.5rem);
+    box-shadow: 0 2.5rem 4rem rgba(0,0,0,.2);
+    z-index: 20;
+
+}
+
+.foot{
+    position: absolute;
+    top: 180vh;
+    background-color: #80d671dc;
+    margin-left: 30px;
+
+}
+
+.foot div{
+
+    font-size: 16px;
+    font-weight: 200;
+    padding-top: 1rem;
+    letter-spacing: .2rem;
+    word-spacing: .8rem;
+    text-transform: uppercase;
+  
+}
