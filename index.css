@@ -6,6 +6,7 @@
 
 .header{
     height: 95vh;
+     Width:100%;
     background-image:linear-gradient(hsla(111, 55%, 64%, 0.863),
      hsla(155, 49%, 55%, 0.822)) , url(./img/togen\ lo.jpg);
     background-size: cover;
@@ -189,6 +190,7 @@
 
 .image-header{
     position: relative;
+    Width:100%;
 }
 
 .image{
